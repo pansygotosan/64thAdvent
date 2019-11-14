@@ -1,0 +1,478 @@
+html,body,main{
+    margin: 0 ;
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a264f;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    font-weight: lighter;
+}
+
+
+p{
+    font-family: futura-pt, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.contents{
+    display: block;
+    color: white;
+}
+
+#day_logo {
+    fill:  white; 
+}
+
+#snow3,#snow4 ,#snow5,#snow6,#snow7,#snow8,#snow9,#snow10,#snow11,#snow12
+{
+    fill: white;
+    opacity: 0;
+}
+
+.snowing{
+    animation: snowing 10s ease 0s 1 normal forwards;
+}
+@keyframes snowing{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+@media screen and (orientation: landscape) {
+    /* 横長 */
+    .loading {
+        position: fixed;
+        z-index: 10000;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: white;
+    }
+    .loadingLogo {
+        position: absolute;
+        width: 70vh;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    svg{
+        width:auto;
+        height:auto;
+        max-width:100%;
+        max-height:100%; 
+    }
+    .st0{
+        fill:none;
+        stroke:#1A264F;
+        stroke-width:18;
+        stroke-linecap:round;
+        stroke-linejoin:round;
+        stroke-miterlimit:10;
+        opacity: 0.8;
+    }
+    .st1{
+        fill:white;
+        opacity: 0.9;
+    }
+    .path {
+        stroke-dasharray: 10000;
+        stroke-dashoffset: 10000;
+        animation: DASH 3s ease-in-out alternate 0s forwards;
+      }
+       
+    .path2 {
+    animation-delay: 0.3s;
+    }
+    
+    @keyframes DASH {
+        0% {
+          stroke-dashoffset: 10000;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+      }
+
+    .title{
+        width:30vw;
+        height: 100vh;
+        float: left;
+        margin: auto 3vw;
+        position: relative;
+    }
+    .logo{
+        width:30vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+    }
+    .text{
+        padding-top: 3vh;
+    }
+    .text p{
+        margin: auto;
+        font-size: 2vw;
+        text-align:center;
+    }
+
+    .calender{
+        width: 100vh;
+        height: 100vh;
+        float: left;
+        display: flex;
+    }
+    .month{
+        width: 95vh;
+        height: 95vh;
+        margin: auto;
+
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 1vh 1vh;
+        grid-template-areas:'day1 day2 day3 day4 day5'
+                            'day6 day7 day8 day9 day10'
+                            'day11 day12 day13 day14 day15'
+                            'day16 day17 day18 day19 day20'
+                            'day21 day22 day23 day24 day25';
+    }
+
+}
+
+
+@media screen and (orientation: portrait) {
+    /* 縦長 */
+    .loading {
+        position: fixed;
+        z-index: 10000;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: white;
+    }
+    .loadingLogo {
+        position: absolute;
+        width: 80vw;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    svg{
+        width:auto;
+        height:auto;
+        max-width:100%;
+        max-height:100%; 
+    }
+    .st0{
+        fill:none;
+        stroke:#1A264F;
+        stroke-width:18;
+        stroke-linecap:round;
+        stroke-linejoin:round;
+        stroke-miterlimit:10;
+        opacity: 0.8;
+    }
+    .st1{
+        fill:white;
+        opacity: 0.9;
+    }
+    .path {
+        stroke-dasharray: 10000;
+        stroke-dashoffset: 10000;
+        animation: DASH 3s ease-in-out alternate 0s forwards;
+      }
+       
+    .path2 {
+    animation-delay: 0.3s;
+    }
+    
+    @keyframes DASH {
+        0% {
+          stroke-dashoffset: 10000;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+      }
+    .title{
+        /* float: left; */
+        margin: 1vh auto;
+        text-align:  center;
+        width: 90vw;
+        display: flex;
+    }
+    .title p{
+        font-size: 5vw;
+        margin: auto;
+        text-align:center
+    }
+    .logo{
+        margin: auto;
+    }
+    .calender{
+        width: 100vw;
+        height: 100vw;
+        /* float: left; */
+        display: flex;
+    }
+    .month{
+        width: 95vw;
+        height: 95vw;
+        margin: auto;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 1vw 1vw;
+        grid-template-areas:'day1 day2 day3 day4 day5'
+                            'day6 day7 day8 day9 day10'
+                            'day11 day12 day13 day14 day15'
+                            'day16 day17 day18 day19 day20'
+                            'day21 day22 day23 day24 day25';
+    }
+
+}
+
+.day{
+    position: relative;
+    text-align:center;
+}
+
+.day img{
+    width:auto;
+    height:auto;
+    max-width:100%;
+    max-height:100%; 
+}
+
+.under_img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.on_img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.opened{
+    transform-origin: -50% top;
+    transform: rotateY( 97deg) translate(-50%, -50%);
+        filter:brightness(60%);
+}
+
+.open{
+    animation: opening 2s ease 0s 1 normal forwards;
+    transform-origin: -50% top;
+}
+
+@keyframes opening{
+    0%{
+        transform: rotateY(0deg) translate(-50%, -50%);
+        filter:brightness(100%);
+    }
+    /* 50%{
+        transform: rotateY(60deg) translate(-50%, -50%);
+    } */
+    100%{
+        transform: rotateY( 97deg) translate(-50%, -50%);
+        filter:brightness(60%);
+    }
+}
+
+.patapata{
+    animation: patapata 10s ease 0s infinite normal forwards;
+    transform-origin: -50% top;
+}
+
+@keyframes patapata{
+    0%{
+        transform: rotateY(0deg) translate(-50%, -50%);
+        filter:brightness(100%);
+    }
+    20%{
+        transform: rotateY( 35deg) translate(-50%, -50%);
+        filter:brightness(90%);
+    }
+    40%{
+        transform: rotateY( 0deg) translate(-50%, -50%);
+        filter:brightness(100%);
+    }
+    65%{
+        transform: rotateY( 30deg) translate(-50%, -50%);
+        filter:brightness(95%);
+    }
+    100%{
+        transform: rotateY( 0deg) translate(-50%, -50%);
+        filter:brightness(100%);
+    }
+}
+
+
+.day1{grid-area: day1;}
+.day2{grid-area: day2;}
+.day3{grid-area: day3;}
+.day4{grid-area: day4;}
+.day5{grid-area: day5;}
+.day6{grid-area: day6;}
+.day7{grid-area: day7;}
+.day8{grid-area: day8;}
+.day9{grid-area: day9;}
+.day10{grid-area: day10;}
+.day11{grid-area: day11;}
+.day12{grid-area: day12;}
+.day13{grid-area: day13;}
+.day14{grid-area: day14;}
+.day15{grid-area: day15;}
+.day16{grid-area: day16;}
+.day17{grid-area: day17;}
+.day18{grid-area: day18;}
+.day19{grid-area: day19;}
+.day20{grid-area: day20;}
+.day21{grid-area: day21;}
+.day22{grid-area: day22;}
+.day23{grid-area: day23;}
+.day24{grid-area: day24;}
+.day25{grid-area: day25;}
+
+
+
+
+
+.modalArea {
+    visibility: hidden; /* displayではなくvisibility */
+    opacity : 0;
+    position: fixed;
+    z-index: 100000; /* サイトによってここの数値は調整 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+  }
+  
+  .modalBg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(30,30,30,0.5);
+  }
+  
+  .modalWrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    width: 70vw;
+    height: 70vh;
+    max-width: 500px;
+    max-height: 400px;
+    padding: 10px 20px;
+    background-color: #fff;
+  }
+  
+  .closeModal {
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    cursor: pointer;
+  }
+  
+  .is-show { /* モーダル表示用クラス */
+    visibility: visible;
+    opacity : 1;
+  }
+
+  .modalContents{
+      position: relative;
+  }
+
+  .textBox{
+    position: absolute;
+    top: 25px;
+    width: 70vw;
+    height: 58vh;
+    max-width: 500px;
+    max-height: 350px;
+    overflow : auto;
+  }
+
+  .tweetButton{
+    position: absolute;
+    bottom: 1rem;
+    right: 0.5rem;
+  }
+
+.topLine,.bottomLine,.topLine2,.bottomLine2 {
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    border: none;
+    background-color: #1a264f;
+    margin: 0 auto;
+    
+}
+.color1{
+    background-color: #9aabb9;
+}
+.color2{
+    background-color: #c4d4e0;
+}
+.color3{
+    background-color: #e2b49a;
+}
+.color4{
+    background-color: #9abca4;
+}
+.topLine{
+    top: 6px;
+    left: 0;
+}
+.bottomLine{
+    bottom: 6px;
+    right: 0;
+}
+.topLine2{
+    top: 15px;
+    left: 0;
+}
+.bottomLine2{
+    bottom: 15px;
+    right: 0;
+}
+
+.writingLine {
+    width: 100%;
+    transition: all 1s;
+}
+
+.sentence{
+    opacity: 0;
+}
+
+.showingText1{
+    animation: showingText 0.8s ease 0.2s 1 forwards;
+}
+.showingText2{
+    animation: showingText 0.8s ease 0.4s 1 forwards;
+}
+.showingText3{
+    animation: showingText 0.8s ease 0.6s 1 forwards;
+}
+
+@keyframes showingText {
+    100% {
+      opacity: 1;
+    }
+  }
