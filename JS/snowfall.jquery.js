@@ -98,7 +98,7 @@ if (!Date.now)
     $.snowfall = function(element, options){
         var flakes = [],
             defaults = {
-                flakeCount : 80,//defaultは35
+                flakeCount : 50,//defaultは35
                 flakeColor : '#ffffff',
 				flakePosition: 'absolute',
                 flakeIndex: 9999,
@@ -376,16 +376,16 @@ if (!Date.now)
 })(jQuery);
 
 
-$(function() {
-    $(document).snowfall(); // この1行でOK
-  });
+// $(function() {
+//     $(document).snowfall(); // この1行でOK
+//   });
 
   $(function() {
     $(document).snowfall({
       minSize  : 1,    // 雪の最小サイズ
       maxSize  : 4,    // 雪の最大サイズ
       minSpeed : 0.5,    // 雪の最低速度
-      maxSpeed : 2,    // 雪の最高速度
+      maxSpeed : 3,    // 雪の最高速度
       round    : true, // 雪の形を丸くする
       shadow   : true, // 雪に影をつける
       flakeColor : "#fff", // 雪の色を指定

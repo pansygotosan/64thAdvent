@@ -402,9 +402,9 @@ p{
     position: absolute;
     top: 25px;
     width: 70vw;
-    height: 58vh;
+    height: 53vh;
     max-width: 500px;
-    max-height: 350px;
+    max-height: 340px;
     overflow : auto;
   }
 
@@ -459,6 +459,7 @@ p{
 
 .sentence{
     opacity: 0;
+    margin: 10px 0;
 }
 
 .showingText1{
