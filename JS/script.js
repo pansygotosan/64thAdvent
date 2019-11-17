@@ -3,7 +3,7 @@ $(function(){
     　var loading = $("#loading");
     　//ローディングエリアを隠す処理
     　var isHidden = function(){
-    　　loading.fadeOut(1500); //1000ミリ秒かけてフェードアウト
+    　　loading.fadeOut(2000); //1000ミリ秒かけてフェードアウト
     　};
     　//1000ミリ秒後にloadingFunc開始
     　setTimeout(isHidden,3000);

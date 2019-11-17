@@ -460,6 +460,8 @@ p{
 .sentence{
     opacity: 0;
     margin: 10px 0;
+    text-align: justify;
+    text-justify: inter-ideograph;
 }
 
 .showingText1{
