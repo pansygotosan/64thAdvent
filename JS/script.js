@@ -16,7 +16,7 @@ window.onload=function(){
     var month=now.getMonth()+1;
     var today = now.getDate();
     // today = 26;
-    // year=2020;
+    year=2020;
     console.log(year);
     console.log(month);
     console.log(today);
