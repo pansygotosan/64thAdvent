@@ -283,9 +283,6 @@ p{
         transform: rotateY(0deg) translate(-50%, -50%);
         filter:brightness(100%);
     }
-    /* 50%{
-        transform: rotateY(60deg) translate(-50%, -50%);
-    } */
     100%{
         transform: rotateY( 97deg) translate(-50%, -50%);
         filter:brightness(60%);
@@ -311,8 +308,8 @@ p{
         filter:brightness(100%);
     }
     65%{
-        transform: rotateY( 30deg) translate(-50%, -50%);
-        filter:brightness(95%);
+        transform: rotateY( 40deg) translate(-50%, -50%);
+        filter:brightness(85%);
     }
     100%{
         transform: rotateY( 0deg) translate(-50%, -50%);
@@ -374,10 +371,10 @@ p{
     top: 50%;
     left: 50%;
     transform:translate(-50%,-50%);
-    width: 70vw;
-    height: 70vh;
-    max-width: 500px;
-    max-height: 400px;
+    width: 80vw;
+    height: 80vh;
+    max-width: 580px;
+    max-height: 480px;
     padding: 10px 20px;
     background-color: #fff;
   }
@@ -400,11 +397,11 @@ p{
 
   .textBox{
     position: absolute;
-    top: 25px;
-    width: 70vw;
-    height: 53vh;
-    max-width: 500px;
-    max-height: 340px;
+    top: 35px;
+    width: 80vw;
+    height: 60vh;
+    max-width: 580px;
+    max-height: 410px;
     overflow : auto;
   }
 
