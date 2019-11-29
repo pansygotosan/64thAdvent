@@ -405,10 +405,16 @@ p{
     overflow : auto;
   }
 
-  .tweetButton{
+  .shareButton{
     position: absolute;
     bottom: 1rem;
     right: 0.5rem;
+  }
+
+  .shareButton img{
+      height: 20px;
+      width: auto;
+      padding: 0 5px;
   }
 
 .topLine,.bottomLine,.topLine2,.bottomLine2 {

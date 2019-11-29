@@ -16,14 +16,13 @@ window.onload=function(){
     var month=now.getMonth()+1;
     var today = now.getDate();
     // today = 26;
-    year=2020;
-    console.log(year);
-    console.log(month);
-    console.log(today);
+    // year=2020;
+    // console.log(year);
+    // console.log(month);
+    // console.log(today);
 
 
     var target = document.getElementsByClassName('on_img');
-    console.log(target)
 
     //ドアの処理
 　  for (var i =0; i <target.length; i++) {
@@ -723,17 +722,3 @@ window.onload=function(){
 }
 
 
-
-// (function () {
-//     const modalArea = document.getElementById('modalArea');
-//     const openModal = document.getElementById('openModal');
-//     const closeModal = document.getElementById('closeModal');
-//     const modalBg = document.getElementById('modalBg');
-//     const toggle = [openModal,closeModal,modalBg];
-    
-//     for(let i=0, len=toggle.length ; i<len ; i++){
-//       toggle[i].addEventListener('click',function(){
-//         modalArea.classList.toggle('is-show');
-//       },false);
-//     }
-//   }());
